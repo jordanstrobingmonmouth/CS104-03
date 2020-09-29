@@ -5,9 +5,13 @@ total = 0
 average = 0.0
 scoreCount = 0 
 
+numberOfScores = int(input('Please enter the number of scores you want to average: '))
 
-#numberOfScores = input('Please enter the number of scores you want to average: ')
-score1 = int(input('Please enter a text score: '))
-score2 = int(input('Please enter a text score: '))
-average = (score1 + score2) / 2
+
+score = int(input('Please enter a score: '))
+total = total + score
+scoreCount = scoreCount + 1
+
+
+average = total / numberOfScores
 print(average)
